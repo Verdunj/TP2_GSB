@@ -1,5 +1,9 @@
 LSW42GSBmvc
 ===========
+Joris VERDUN
+Jérémy MURE
+Hugo BOCKTALES
 
-pour E4
-aider les uns à aider les autres...
+=============
+
+Compte-rendu 
