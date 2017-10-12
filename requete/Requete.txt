@@ -1,2 +1,2 @@
-ALTER View ListeVisite as(SELECT idvisite,Visiteur.nom as NomVisiteur,Praticien.nom as NomPraticien,libelle as Specialite,niveauInteret FROM Visite,Praticien,Visiteur,Specialite WHERE refVisiteur = id AND refPraticien=idPraticien AND refSpecialite = idSpecialite AND refSpecialite != 3 AND refSpecialite != 4 ORDER BY niveauInteret desc);
+create View ListeVisite as(SELECT idvisite,Visiteur.nom as NomVisiteur,Praticien.nom as NomPraticien,libelle as Specialite,niveauInteret FROM Visite,Praticien,Visiteur,Specialite WHERE refVisiteur = id AND refPraticien=idPraticien AND refSpecialite = idSpecialite AND refSpecialite != 3 AND refSpecialite != 4 ORDER BY niveauInteret desc);
 SELECT * FROM ListeVisite;
