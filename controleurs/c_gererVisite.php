@@ -10,14 +10,21 @@ switch($action){
 			$refVisiteur = $idVisiteur;
 			$refPraticien = $_REQUEST['refPraticien'];
 			$niveauInteret = $_REQUEST['niveauInteret'];
-	  	 	//$pdo->creeNouvelleAbsence($DateDebut,$refVisiteur,$nbjour,$refMotif);
+			$pdo->creeCompteRendu($refVisiteur,$refPraticien,$now,$niveauInteret);}break;
+			
+	case 'affichage' :{
+			echo 'Entrer absence :';}break;
+		}
+			
+			
+/*	  	 	
+	  	 	
 	  	 	$bdd = new PDO('mysql:host=localhost;dbname=gsb_frais2;charset=utf8', 'admin', 'admin');
-	  	 	$requete1 = $bdd->prepare('INSERT into Visite(refVisiteur,refPraticien,finDeVisite,niveauInteret) VALUES(:refVisiteur,:refPraticien,NOW(),:niveauInteret)');
+	  	 	$requete1 = $bdd->prepare('INSERT into Visite(refVisiteur,refPraticien,niveauInteret) VALUES(:refVisiteur,:refPraticien,:niveauInteret)');
 	  	 	$requete1->execute(array(
 	  	 	'refVisiteur' => $refVisiteur,
 	  	 	'refPraticien' => $refPraticien,
 	  	 	'niveauInteret' => $niveauInteret
 	  	 	));
-			
-		}break;
-	}
+			*/
+

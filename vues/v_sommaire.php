@@ -20,7 +20,7 @@
            </li>
 
            <li class="smenu">
-              <a href="index.php?uc=gererVisite&action=renduVisite" title="Compte rendu de mes visites">Mes comptes-rendus</a>
+              <a href="index.php?uc=gererVisite&action=affichage" title="Compte rendu de mes visites">Mes comptes-rendus</a>
            </li>
            
  	   <li class="smenu">

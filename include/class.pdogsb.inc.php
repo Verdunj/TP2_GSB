@@ -235,6 +235,11 @@ class PdoGsb{
 		values('','$idVisiteur','$mois','$libelle','$dateFr','$montant')";
 		PdoGsb::$monPdo->exec($req);
 	}
+	
+	public function creeCompteRendu($refVisiteur,$refPraticien,$now,$niveauInteret){
+		$req1 = "insert into Visite(refVisiteur,refPraticien,niveauInteret) values('$refVisiteur','$refPraticien','$niveauInteret')";
+		PdoGsb::$monPdo->exec($req1);
+	}
 /**
  * Supprime le frais hors forfait dont l'id est passé en argument
  
