@@ -10,7 +10,7 @@ switch($action){
 			$refVisiteur = $idVisiteur;
 			$refPraticien = $_REQUEST['refPraticien'];
 			$niveauInteret = $_REQUEST['niveauInteret'];
-			$pdo->creeCompteRendu($refVisiteur,$refPraticien,$now,$niveauInteret);}break;
+			$pdo->creeCompteRendu($refVisiteur,$refPraticien,'now()',$niveauInteret);}break;
 			
 	case 'affichage' :{
 			echo 'Entrer absence :';}break;
