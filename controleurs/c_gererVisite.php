@@ -13,6 +13,7 @@ switch($action){
 			$pdo->creeCompteRendu($refVisiteur,$refPraticien,'now()',$niveauInteret);}break;
 			
 	case 'affichage' :{
+			
 			echo 'Entrer absence :';}break;
 		}
 			

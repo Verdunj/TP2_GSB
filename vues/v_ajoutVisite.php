@@ -6,8 +6,20 @@
 
 <tr>
 	<td>Nom du praticien</td>
-	<td>
-		<input  type='text' name=refPraticien  size='25' maxlength='100'>
+	<td>"?>
+<?php
+				echo'<label for="nomV" style="color:#B01919;">Qui ? : </label>';
+				echo'<select name="nomV" id="idVisiteur">';
+				$bdd = new PDO('mysql:host=localhost;dbname=gsb_frais2;charset=utf8', 'admin', 'admin');
+				$reponse1 = $bdd->query('SELECT * FROM Praticien');
+					while ($donnees = $reponse1->fetch())
+						{
+							$idP = $donnees['idPraticien'];
+							$nom = $donnees['nom'];
+							echo"<option value='",$idP ,"'", ">" , $nom,"</option>";
+						}
+					echo"</select>";
+					$reponse1->closeCursor();?>
 	</td>
 </tr>
 <tr>
