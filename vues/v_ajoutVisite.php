@@ -8,7 +8,6 @@
 	<td>Nom du praticien</td>
 	<td>"?>
 <?php
-				echo'<label for="refP" style="color:#B01919;">Qui ? : </label>';
 				echo'<select name="refP" id="refP">';
 				$bdd = new PDO('mysql:host=localhost;dbname=gsb_frais2;charset=utf8', 'admin', 'admin');
 				$reponse1 = $bdd->query('SELECT * FROM Praticien');

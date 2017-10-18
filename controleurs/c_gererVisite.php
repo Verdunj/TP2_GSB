@@ -6,11 +6,7 @@ $action = $_REQUEST['action'];
 
 
 switch($action){
-	case 'renduVisite':{
-
-	  	 	
-	
-	  	 		  	 	
+	case 'renduVisite':{	  	 		  	 	
 	  	 		  	 	$nivInt = $_REQUEST['nivInt'];
 	  	 		  	 	$refP = $_REQUEST['refP'];
 		$pdo->creeCompteRendu($idVisiteur,$refP,$nivInt);
@@ -20,7 +16,7 @@ switch($action){
 			
 	case 'affichage' :{
 			
-			echo 'Entrer absence :';}break;
+			echo 'Entrer visite :';}break;
 		}
 			
 			
