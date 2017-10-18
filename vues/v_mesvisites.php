@@ -1,7 +1,7 @@
 <?php
 	echo "<body>
 				<h3>Consulter mes Visites </h3>
-<form method='POST' action='index.php?uc=gererVisite&action=renduVisite'>
+<form method='POST' action='index.php?uc=mesVisites&action=renduVisite'>
 <table class='tabNonQuadrille'>
 
 <form>
