@@ -23,9 +23,6 @@
               <a href="index.php?uc=gererVisite&action=affichage" title="Compte rendu de mes visites">Mes comptes-rendus</a>
            </li>
            <li class="smenu">
-              <a href="index.php?uc=etatFrais&action=selectionnerMois" title="Consultation de mes fiches de frais">Mes fiches de frais</a>
-           </li>
-           <li class="smenu">
               <a href="index.php?uc=mesVisites&action=selectionnerMois" title="Consultation de mes Visites">Mes Visites</a>
            </li>
 
