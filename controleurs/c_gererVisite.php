@@ -7,10 +7,16 @@ $action = $_REQUEST['action'];
 
 switch($action){
 	case 'renduVisite':{
-			$refVisiteur = $idVisiteur;
-			$refPraticien = $_REQUEST['refPraticien'];
-			$niveauInteret = $_REQUEST['niveauInteret'];
-			$pdo->creeCompteRendu($refVisiteur,$refPraticien,'now()',$niveauInteret);}break;
+		echo $_REQUEST['refP'];
+		echo $_REQUEST['nivInt'];
+	  	 	$bdd = new PDO('mysql:host=localhost;dbname=gsb_frais2;charset=utf8', 'admin', 'admin');
+	  	 	$requete1 = $bdd->prepare('INSERT into Visite(refVisiteur,refPraticien,niveauInteret) VALUES(:refVisiteur,:refPraticien,:niveauInteret)');
+	  	 	$requete1->execute(array(
+	  	 	'refVisiteur' => $idVisiteur,
+	  	 	'refPraticien' => $_REQUEST['refP'],
+	  	 	'niveauInteret' => $_REQUEST['nivInt']
+	  	 		  	 	));}break;
+
 			
 	case 'affichage' :{
 			
@@ -18,14 +24,6 @@ switch($action){
 		}
 			
 			
-/*	  	 	
 	  	 	
-	  	 	$bdd = new PDO('mysql:host=localhost;dbname=gsb_frais2;charset=utf8', 'admin', 'admin');
-	  	 	$requete1 = $bdd->prepare('INSERT into Visite(refVisiteur,refPraticien,niveauInteret) VALUES(:refVisiteur,:refPraticien,:niveauInteret)');
-	  	 	$requete1->execute(array(
-	  	 	'refVisiteur' => $refVisiteur,
-	  	 	'refPraticien' => $refPraticien,
-	  	 	'niveauInteret' => $niveauInteret
-	  	 	));
-			*/
+	  	 	
 

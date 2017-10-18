@@ -8,15 +8,15 @@
 	<td>Nom du praticien</td>
 	<td>"?>
 <?php
-				echo'<label for="nomV" style="color:#B01919;">Qui ? : </label>';
-				echo'<select name="nomV" id="idVisiteur">';
+				echo'<label for="refP" style="color:#B01919;">Qui ? : </label>';
+				echo'<select name="refP" id="refP">';
 				$bdd = new PDO('mysql:host=localhost;dbname=gsb_frais2;charset=utf8', 'admin', 'admin');
 				$reponse1 = $bdd->query('SELECT * FROM Praticien');
 					while ($donnees = $reponse1->fetch())
 						{
-							$idP = $donnees['idPraticien'];
+							$refP = $donnees['idPraticien'];
 							$nom = $donnees['nom'];
-							echo"<option value='",$idP ,"'", ">" , $nom,"</option>";
+							echo"<option value='",$refP ,"'", ">" , $nom,"</option>";
 						}
 					echo"</select>";
 					$reponse1->closeCursor();?>
@@ -25,7 +25,7 @@
 <tr>
 	<td>Niveau d'interet</td>
 	<td>
-		<input type='number' name='niveauInteret' size='30' min='1' max='5' maxlength='1'>
+		<input type='number' name='nivInt' size='30' min='1' max='5' maxlength='1'>
 	</td>
 </tr>
 
@@ -42,5 +42,5 @@
 	</td>
 </tr>
 
-</form>";
+</form>
 
