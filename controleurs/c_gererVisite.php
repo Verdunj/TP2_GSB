@@ -7,8 +7,6 @@ $action = $_REQUEST['action'];
 
 switch($action){
 	case 'renduVisite':{
-		echo $_REQUEST['refP'];
-		echo $_REQUEST['nivInt'];
 	  	 	$bdd = new PDO('mysql:host=localhost;dbname=gsb_frais2;charset=utf8', 'admin', 'admin');
 	  	 	$requete1 = $bdd->prepare('INSERT into Visite(refVisiteur,refPraticien,niveauInteret) VALUES(:refVisiteur,:refPraticien,:niveauInteret)');
 	  	 	$requete1->execute(array(
