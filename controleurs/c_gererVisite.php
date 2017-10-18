@@ -9,9 +9,7 @@ switch($action){
 	case 'renduVisite':{
 
 	  	 	
-	  	 	
-			
-	  	 		  	 	));*/
+	
 	  	 		  	 	
 	  	 		  	 	$nivInt = $_REQUEST['nivInt'];
 	  	 		  	 	$refP = $_REQUEST['refP'];
