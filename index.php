@@ -24,6 +24,10 @@ switch($uc){
 	case 'gererVisite' :{
 		include("controleurs/c_gererVisite.php");break;
 		}
+	case 'mesVisites' :{
+		include("controleurs/c_mesvisites.php");break;
+		}
+
 }
 include("vues/v_pied.php") ;
 ?>
