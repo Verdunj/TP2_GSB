@@ -236,8 +236,8 @@ class PdoGsb{
 		PdoGsb::$monPdo->exec($req);
 	}
 	
-	public function creeCompteRendu($refVisiteur,$refPraticien,$now,$niveauInteret){
-		$req1 = "insert into Visite(refVisiteur,refPraticien,niveauInteret) values('$refVisiteur','$refPraticien','$niveauInteret')";
+	public function creeCompteRendu($idVisiteur,$refP,$nivInt){
+		$req1 = "insert into Visite(refVisiteur,refPraticien,niveauInteret) values('$idVisiteur','$refP','$nivInt')";
 		PdoGsb::$monPdo->exec($req1);
 	}
 /**
